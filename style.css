@@ -1,0 +1,139 @@
+*, .body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.container-wrapper{
+    width: 100%;
+    
+}
+.nav-wrapper{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(30, 207, 148); */
+}
+.logoImg{
+    width: 15%;
+    height: 40%;
+}
+
+.dashboard-container{
+    width: 100%;
+    display: flex;
+}
+/* sidebar */
+
+.sidebar{
+    height:120vh;
+    background: rgb(30, 207, 148);
+    color:white;
+}
+.dashboard{
+  
+}
+
+
+.white-space{
+    margin-top:10px;
+    border: 1px solid rgb(207, 212, 211);
+}
+.item-1{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.item-2{
+  
+    align-items: center;
+    padding: 10px;
+}
+.item{
+    text-align: left;
+    background: rgb(8, 151, 207);
+    height: 45px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.item:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/* Dashboard Item */
+.dashboard-container{
+    justify-content: space-between;
+    height: 300px;
+   
+}
+.dashboard-item1{
+    margin-left: 13px;
+    width: 500px;
+}
+
+.topbar{
+    width: 100%;
+    justify-content:space-between;
+    background-color: bisque;
+    padding: 10px;
+
+}
+.notific-info{
+ flex-direction: column;   
+
+}
+.info-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Card-title{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.rating{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.title{
+    align-items: center;
+}
+.icon{
+    font-size: 30px;
+}
+.card-text{
+    font-size: 15px;
+}
+
+.slider-icon{
+   cursor: pointer;
+   font-size: 25px;
+   color: blueviolet;
+   transition: ease-in;
+   
+}
+
+.slider-icon:hover{
+    color: rgb(10, 186, 218);
+    transition: ease-in-out;
+}
+
+
+
+
+
+
+
+
+/* Arrow */
