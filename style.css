@@ -30,12 +30,10 @@
 /* sidebar */
 
 .sidebar{
-    height:120vh;
+    height:220vh;
     background: rgb(30, 207, 148);
     color:white;
-}
-.dashboard{
-  
+    position:sticky;
 }
 
 
@@ -93,12 +91,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 .Card-title{
     font-size: 13px;
     font-weight: bold;
 }
+
 
 .rating{
     font-size: 14px;
@@ -114,6 +114,11 @@
 }
 .card-text{
     font-size: 15px;
+    align-items: center;
+}
+.text-item{
+   display: flex;
+   text-align: center;
 }
 
 .slider-icon{
@@ -128,6 +133,11 @@
     color: rgb(10, 186, 218);
     transition: ease-in-out;
 }
+/* Trips */
+.fixed{
+    font-size: 15px;
+    font-weight: 500;
+}
 
 
 
@@ -135,5 +145,14 @@
 
 
 
+/* Driver info */
 
-/* Arrow */
+
+.driver-infoItem{
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+.driver-footer{
+    align-items: center;
+}
