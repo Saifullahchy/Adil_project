@@ -30,7 +30,7 @@
 /* sidebar */
 
 .sidebar{
-    height:220vh;
+    height:210vh;
     background: rgb(30, 207, 148);
     color:white;
     position:sticky;
@@ -156,4 +156,16 @@
 }
 .driver-footer{
     align-items: center;
+}
+
+/* Devices card  */
+.radio{
+    background: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: flex-end;
+}
+.deviceItem{
+    justify-content: space-between;
 }
