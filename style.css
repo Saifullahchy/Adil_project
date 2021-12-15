@@ -3,6 +3,52 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* Sidebar */
+.navbar{
+    width: 250px;
+    height: 150vh;
+    position: fixed;
+    z-index: 1;
+    margin-left: -300px;
+    background-color: rgb(8, 174, 224);
+    transition: 0.4s;
+}
+.nav-link{
+    font-size: 1.0em;
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+    background-color: #ffffff26;
+}
+.dropdown-menu{
+    background-color: rgb(8, 174, 224);
+}
+.dropdown-menu:active,
+.dropdown-menu:focus,
+.dropdown-menu:hover{
+    background-color: #ffffff26;
+}
+.my-container{
+    transition: 0.4s;
+    width: 100%;
+}
+.active-nav{
+    margin-left: 0;
+}
+.active-cont{
+    margin-left: 250px;
+}
+#menu-btn{
+    /* background-color: rgb(219, 161, 36); */
+    padding: 2px;
+}
+#menu-btn:focus{
+    box-shadow: 0 0 0 0.25rem #ffffff26;   
+}
+
+/*end sidebar  */
 .container{
     margin: 0;
     padding: 0;
@@ -33,7 +79,6 @@
     height:210vh;
     background: rgb(30, 207, 148);
     color:white;
-    position:sticky;
 }
 
 
@@ -68,15 +113,60 @@
 /* Dashboard Item */
 .dashboard-container{
     justify-content: space-between;
-    height: 300px;
    
 }
 .dashboard-item1{
     margin-left: 13px;
-    width: 500px;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.car-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+@media (max-width:768px) {
+       .dashboard-container{
+        flex-direction:column !important ;
+        margin-top: 20px;
+       } 
+       .sidebar{
+           width: 400px !important;
+       }
+       .dashboard-item1{
+           margin-top: 10px;
+           margin-left: 5px;
+       }
+       .car-items{
+           display: flex;
+    
+           justify-content: center;
+           align-items: center;
+       }
+}
+@media (max-width:950px) {
+    .dashboard-container{
+        flex-direction: inherit;
+        margin-top: 20px;
+    } 
+    .sidebar{
+        width: 400px !important;
+    }
+    .dashboard-item1{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .vehicle-items.img{
+        grid-template-columns: 1fr;
+    }
+    .car-items{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .topbar{
     width: 100%;
     justify-content:space-between;
