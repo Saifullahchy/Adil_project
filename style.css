@@ -145,6 +145,44 @@
            align-items: center;
        }
 }
+@media (max-width:480px) {
+    .dashboard-container{
+     flex-direction:column !important ;
+     margin-top: 20px;
+    } 
+    .sidebar{
+        width: 400px !important;
+    }
+    .dashboard-item1{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .car-items{
+        display: flex;
+ 
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:600px) {
+    .dashboard-container{
+     flex-direction:column !important ;
+     margin-top: 20px;
+    } 
+    .sidebar{
+        width: 400px !important;
+    }
+    .dashboard-item1{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .car-items{
+        display: flex;
+ 
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media (max-width:950px) {
     .dashboard-container{
         flex-direction: inherit;
