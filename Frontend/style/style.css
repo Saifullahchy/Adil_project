@@ -1,0 +1,15 @@
+.nav-item{
+    text-transform: uppercase;
+
+}
+.nav-item:hover{
+    background-color: rgb(219, 159, 159);
+    color: #fff;
+}
+.icon{
+    font-size: 35px;
+    
+}
+.icon-div{
+    margin-left: 15px;
+}
