@@ -2,8 +2,11 @@
   text-transform: uppercase;
 }
 .nav-item:hover {
-  background-color: rgb(219, 159, 159);
-  color: #fff;
+  border-radius: 5px;
+  background-color: rgb(144, 11, 11);
+  background: #fff;
+  font-size: 40;
+  font-weight: bold;
 }
 .icon {
   font-size: 35px;
