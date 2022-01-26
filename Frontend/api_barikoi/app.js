@@ -4,7 +4,7 @@ const TARGET_LONGITUDE = 90.3673;
 const TARGET_LATITUDE = 23.8340;
 const API_KEY = 'Mjc4OTpSSlJZMlZVNlE3';
 const distance =  fetch(`https://barikoi.xyz/v1/api/distance/${API_KEY}/${SOURCE_LONGITUDE},${SOURCE_LATITUDE}/${TARGET_LONGITUDE},${TARGET_LATITUDE}`)
-    .then(response => response.json())
+    .then(response => response.json()) 
     .catch(error => console.error('Error:', error))
     .then(response => console.log('Success:', response))
 
@@ -51,3 +51,8 @@ const END = fetch(`https://barikoi.xyz/v1/api/search/reverse/geocode/server/${AP
 //     })
 //     .then(response => response.json())
 //     .catch(error => console.error('Error:', error))
+
+
+//best solution so far
+//1.push location
+//2.use route and distance api
