@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+
     <script src="script.js" defer></script>
     <title>Register Vehicle</title>
   </head>
@@ -41,31 +42,67 @@
         </div>
       </div>
       <div class="form-step">
-        <div class="input-group">
-          <label for="cities">Select your City</label>
-          <select class="slect" id="cities">
-            <option value="dhaka">Dhaka</option>
-            <option value="sylhet">Sylhet</option>
-            <option value="chittagong">chittagong</option>
-            <option value="khulna" selected>Khulna</option>
-          </select>
+        <div
+          class="input-group"
+          style="
+            height: 300px;
+            background-image: url('numberplate.png');
+            background-size: 100% 100%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="select">
+            <div class="select-type type-1">
+              <select name="metropolitan" class="form-control btns" required>
+                <option value="">Select</option>
+                <option value="Dhaka_Metro">ঢাকা</option>
+                <option value="Khulna_Metro">খুলনা</option>
+                <option value="Sylhet_Metro">সিলেট</option>
+                <option value="Barisal_Metro">বরিশাল</option>
+                <option value="Gazipur_Metro">গাজীপুর</option>
+              </select>
+            </div>
+            <div class="select-type type-2">
+              <select name="reg_letter" class="form-control btns2" required>
+                <option value="">Select</option>
+                <option value="ka">ক</option>
+                <option value="kha">খ</option>
+                <option value="ga">গ</option>
+                <option value="gha">ঘ</option>
+                <option value="ja">জ</option>
+                <option value="jha">ঝ</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="col-sm-4">
+              <input
+                type="text"
+                name="reg_number"
+                class="input-control i-1"
+                placeholder="প্রথম ২ সংখ্যা"
+                maxlength="2"
+                minlength="2"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="col-sm-4">
+              <input
+                type="text"
+                name="half_vehicle_number"
+                class="input-control i-1"
+                placeholder="শেষ ৪ সংখ্যা "
+                maxlength="4"
+                minlength="4"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="input-group">
-          <label for="type">Select your vehicle type</label>
-          <select class="slect" id="type">
-            <option value="dhaka">ক</option>
-            <option value="sylhet">খ</option>
-            <option value="chittagong">গ</option>
-            <option value="khulna" selected>ঘ</option>
-            <option value="chittagong">জ</option>
-            <option value="khulna" selected>ঝ</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="email">Enter your vehicle number</label>
-          <input type="text" name="Vehicle number" id="text" />
-        </div>
         <div class="btns-group">
           <a href="#" class="btn btn-prev">Previous</a>
           <a href="#" class="btn btn-next">Next</a>
@@ -89,6 +126,22 @@
         <div class="btns-group">
           <a href="#" class="btn btn-prev">Previous</a>
           <a href="#" class="btn btn-next">Complete Registration</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="content">
+          <div class="header">
+            <h2 style="text-align: center; color: rgb(201, 44, 23)">
+              Registration Message
+            </h2>
+            <label for="click" class="fas fa-times"></label>
+          </div>
+          <label for="click" class="fas fa-check"></label>
+          <h3 style="text-align: center; color: rgb(201, 44, 23)">
+            Regisrtation Successful
+          </h3>
+          <div class="line"></div>
+          <!-- <label for="click" class="close-btn">Close</label> -->
         </div>
       </div>
     </form>
