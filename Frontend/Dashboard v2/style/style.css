@@ -204,10 +204,13 @@ label {
 .dInfo {
   margin: 24px;
 }
-
-.forPadding {
-  margin-right: 24px;
+.forPadding-1 {
   padding: 24px;
+  margin-right: 24px;
+}
+.forPadding {
+  padding: 24px;
+  height: 350px;
 }
 
 .gray-bg {
@@ -218,6 +221,20 @@ label {
   font-size: 30px;
   color: #b33030;
 }
+.icon-b {
+  font-size: 30px;
+  color: #19282f;
+}
+.icon-red-p {
+  font-size: 30px;
+  color: #b33030;
+  margin: 24px;
+}
+
+.icon-red:hover {
+  color: #19282f;
+  transition: 0.5s ease-in-out;
+}
 .incident-text {
   font-size: 15px;
   font-weight: 700;
@@ -226,4 +243,23 @@ label {
 .imgIncident {
   width: 30%;
   height: 30%;
+}
+
+.item-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #b33030;
+  padding: 24px;
+  font-weight: 500;
+}
+.-btn-link {
+  
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 15px;
+  text-align: center;
 }
