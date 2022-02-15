@@ -1,13 +1,18 @@
+const currentMapLan = 90.38493083631546;
+const currentMapLen = 23.762049884900904;
+
+// const currentLocation = 
+
 
         bkoigl.accessToken = 'Mjc4OTpSSlJZMlZVNlE3' // required
-        new bkoigl.Map({
+       const map = new bkoigl.Map({
             container: 'map',
-            center: [ 90.38493083631546, 23.762049884900904 ],
+            center: [ currentMapLan, currentMapLen ],
             zoom: 15
         })
 // 23.762049884900904, 90.38493083631546
-        map.on('load', () => {
-            const marker = new bkoigl.Marker({ draggable: true })
-                .setLngLat([ 90.3938010872331, 23.821600277500405 ])
-                .addTo(map)
-        })
+map.on('load', () => {
+    const marker = new bkoigl.Marker({ draggable: true })
+        .setLngLat([ currentMapLan,  currentMapLen ])
+        .addTo(map)
+})

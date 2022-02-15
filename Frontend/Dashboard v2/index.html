@@ -23,6 +23,10 @@
     />
 
     <!-- Barikoi Map -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.barikoi.com/bkoi-gl-js/dist/bkoi-gl.css"
+    />
     <script src="https://cdn.barikoi.com/bkoi-gl-js/dist/bkoi-gl.js"></script>
 
     <!-- fontawsone -->
@@ -40,7 +44,9 @@
       <nav class="navbar">
         <div class="col d-md-flex flex-row justify-content-between">
           <div>
-            <p class="col-md logo"><span class="highlite">acci</span>Gone</p>
+            <p class="col-md logo">
+              <span class="accigone_logo">acci</span>Gone
+            </p>
           </div>
           <div><p class="col-md-12 support">Support: 01703650604</p></div>
           <div>
@@ -218,9 +224,7 @@
           </div>
 
           <div class="card-title">
-            <div
-              class="dateTime d-flex flex-column justify-content-end align-item-end"
-            >
+            <div class="dateTime d-flex flex-column justify-content-between">
               <div class="date d-flex flex-md-column">
                 <label class="DateLabel" for="startTime"
                   >Start Date & Time</label
@@ -247,12 +251,18 @@
                   max="2018-06-14T00:00"
                 />
               </div>
-              <button class="card-btn">Search</button>
+              <button class="card-btn margR">Search</button>
             </div>
           </div>
         </div>
         <div class="col chartCanvas">
-          <canvas class="myChart" id="myChart" style="padding: 24px"></canvas>
+          <canvas
+            class="myChart"
+            id="myChart"
+            height="50%"
+            width="100%"
+            style="padding: 24px"
+          ></canvas>
         </div>
       </div>
 
@@ -363,7 +373,7 @@
           </div>
           <div class="cardView">
             <div class="d-flex flex-md-row justify-content-between">
-              <p class="head-title">Maintenance</p>
+              <p class="head-title">Notification</p>
               <p class="highlite p-4">coming soon</p>
             </div>
             <div
@@ -371,12 +381,11 @@
             >
               <i class="fas fa-arrow-alt-circle-left icon-red mt-2"></i>
               <p class="title">
-                Break Shole change(predictive)
+                Wrecker Case Nov 2021
+
                 <br />
 
-                <span style="font-size: 15px">
-                  AI generated maintenance work</span
-                >
+                <span style="font-size: 15px"> Chaser (black) GA 17-0029</span>
               </p>
               <i class="fas fa-arrow-alt-circle-right icon-red mt-2"></i>
             </div>
@@ -405,8 +414,8 @@
               Email: accigone21@gmail.com
             </p>
           </div>
-          <div class="next-btn mt-4">
-            <p class="mt-2" style="text-align: center">Support Ticket</p>
+          <div class="mt-4">
+            <button class="next-btn">Support Ticket</button>
           </div>
         </div>
       </div>

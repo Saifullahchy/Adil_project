@@ -28,11 +28,11 @@ body {
   font-weight: 500;
 }
 .welcome {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 800;
 }
 .name {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .title {
@@ -191,19 +191,6 @@ label {
 .DateLabel {
   font-weight: 700;
 }
-
-.myChart {
-  height: 300px;
-}
-@media screen and(max-width: 570px) {
-  .myChart,
-  #myChart {
-    height: 400px;
-  }
-}
-.dInfo {
-  margin: 24px;
-}
 .forPadding-1 {
   padding: 24px;
   margin-right: 24px;
@@ -211,6 +198,22 @@ label {
 .forPadding {
   padding: 24px;
   height: 350px;
+}
+.chartCanvas {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .forPadding-1 {
+    margin-right: 0px;
+  }
+  .margR {
+    margin-left: 24px;
+  }
+}
+
+.dInfo {
+  margin: 24px;
 }
 
 .gray-bg {
@@ -257,9 +260,12 @@ label {
   font-weight: 500;
 }
 .-btn-link {
-  
   text-decoration: none;
   color: #f8f8f8;
   font-size: 15px;
   text-align: center;
+}
+
+.accigone_logo {
+  text-decoration: 3px #b33030 underline;
 }
